@@ -6,8 +6,9 @@ on:
       - main
 
 jobs:
-    build:
+    build-and-push:
         runs-on: ubuntu-latest
+        
         steps: 
             - name: Checkout
               uses: actions/checkout@v5
@@ -19,7 +20,7 @@ jobs:
                 password: ${{ secrets.DOCKERHUB_TOKEN }}
 
             - name: Construção da Imagem
-              run: docker build -t library-api .
+              run: docker build -t givasques1101/checkpoint1-microservices:latest .
 
             - name: Push da Imagem no DockerHub
               run: docker push givasques1101/checkpoint1-microservices:latest
