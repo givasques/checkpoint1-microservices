@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.giwemirick</groupId>
 	<artifactId>library</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>library</name>
 	<description>Library Project - Java and Spring Boot - CP1 2SEM 3SIR</description>
 	<url/>
